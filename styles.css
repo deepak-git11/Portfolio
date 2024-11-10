@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+#my_pic {
+    height: 50%;
+    border-radius: 3%;
+}
+.flex_t {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex_t1 {
+    width: inherit;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#intro_inside {
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+#intro_inside h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#intro_inside div {
+    text-align: left;
+}
+
+#intro_inside h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(29, 26, 26);
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    /* background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(228,175,205,1) 11%, rgba(249,255,203,1) 22%, rgba(218,177,209,1) 30%, rgba(217,177,209,1) 32%, rgba(199,180,215,1) 50%, rgba(252,251,252,1) 60%, rgba(184,182,220,1) 65%, rgba(178,183,222,1) 70%, rgba(175,183,223,1) 73%, rgba(168,184,225,1) 80%, rgba(163,185,227,1) 85%, rgba(157,186,229,1) 91%, rgba(155,186,230,1) 93%, rgba(154,186,230,1) 94%, rgba(152,186,231,1) 96%, rgba(148,187,233,1) 100%); */
+    background-image: url(./img/B2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+}
+
+#intro .flex_t {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#skill {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    /* background: rgb(232,255,255);
+    background: linear-gradient(0deg, rgba(232,255,255,1) 17%, rgba(42,200,255,1) 56%, rgba(240,251,255,1) 98%); */
+    text-align: center;
+    background-color: white;
+}
+
+#skill p {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 18px;
+
+}
+
+#skill h2 {
+    margin: 20px;
+}
+
+#skill .flex_t {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    gap: 25% 30px;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#front,
+#back,
+#others,
+#data {
+    border: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: fit-content;
+    padding: 10px;
+}
+
+.hover_scale {
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.hover_scale:hover {
+    transform: scale(1.03);
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj article {
+    max-width: 65%;
+}
+
+.hbold {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.fade {
+    position: relative;
+}
+
+.fade .imgg {
+    width: 100%;
+    height: 200px;
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease-out;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.fade::before {
+    content: "CLICK TO VIEW PROJECT";
+    top: 50%;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    font-weight: 1000;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.fade:hover .imgg {
+    opacity: 0.8;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.fade:hover::before {
+    opacity: 1;
+}
+
+#project {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    /* background: rgb(232,255,255);
+    background: linear-gradient(0deg, rgba(232,255,255,1) 17%, rgba(42,200,255,1) 56%, rgba(240,251,255,1) 98%); */
+    background-color: white;
+}
+
+#project h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#project .flex_t {
+    justify-content: space-evenly;
+}
+
+#pro1,
+#pro2 {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline;
+}
+
+#about_me {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+#education {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    /* background: rgb(142,181,233);
+    background: linear-gradient(90deg, rgba(142,181,233,1) 15%, rgba(59,142,230,1) 34%, rgba(182,214,235,1) 53%, rgba(139,178,245,1) 81%); */
+    background-color: white;
+}
+
+#education h2 {
+    text-align: center;
+    margin: 5%;
+}
+
+.edu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    ;
+    box-shadow: 0px -25px 25px -20px rgb(0, 0, 0),
+        0px 28px 41px -20px rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    opacity: 0.5;
+    transition: 0.3s;
+    background-color: whitesmoke;
+}
+
+.edu:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.edu_flex {
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px 10px;
+    justify-content: center;
+    min-height: 75%;
+}
+
+.edu_img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    position: relative;
+    /* background: rgb(232,255,255);
+background: linear-gradient(0deg, rgba(232,255,255,1) 40%, rgba(255,222,0,1) 82%); */
+    width: 100%;
+    height: 100vh;
+    padding-top: 34px;
+    background-color: white;
+}
+
+form {
+    text-align: center;
+    width: 50%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+input,
+textarea {
+    border: 1px solid black;
+    padding: 5px;
+    height: 40px;
+    width: 50%;
+    border-radius: 7px;
+    margin: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+input:focus {
+    transform: scale(1.05);
+  
+}
+
+form>button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 250, 255);
+    width: 20%;
+    transition: 0.1s ease-in;
+    color: black;
+    border: none;
+    font-size: medium;
+}
+
+form>button:hover {
+    background-color: rgb(7, 7, 7);
+    color: white;
+    transform: scale(1.1);
+}
+#contact h2 {
+    text-align: center;
+    margin: 2%;
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    background-color: white;
+}
+
+nav a {
+    margin: 15px;
+    font-weight: 800;
+    font-size: larger;
+    text-decoration: none;
+    position: relative;
+    width: max-content;
+    color: black;
+}
+
+button {
+    font-weight: 600;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    background-color: rgb(25, 25, 25);
+    width: 0;
+    left: 0;
+    height: 3px;
+    bottom: -5px;
+    transition: 0.5s width;
+    border-radius: 20%;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav>a:hover {
+    color: rgba(145, 128, 128, 0.555);
+}
+
+#para {
+    margin-top: 10px;
+    max-width: 70%;
+}
+
+.res_button {
+    border: none;
+    margin: 30px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    transition: .5s;
+    color: black;
+    font-size: medium;
+}
+
+.res_button:hover {
+    background: rgb(255, 202, 232);
+    background: linear-gradient(90deg, rgba(255, 202, 232, 1) 15%, rgba(255, 184, 225, 1) 32%, rgba(255, 255, 255, 1) 54%, rgba(249, 255, 203, 1) 81%);
+    color: black;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 9px 6px rgb(252, 252, 252);
+    cursor: pointer;
+}
+
+#res {
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    padding-top: 30px;
+    /* background: rgb(203,255,255);
+    background: linear-gradient(0deg, rgba(203,255,255,1) 1%, rgba(203,255,255,1) 21%, rgba(20,251,251,1) 51%, rgba(255,245,245,1) 94%); */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#resume {
+    max-width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 45px 65px 0px rgba(0, 0, 0, 0.5),
+        0px 35px 22px 0px rgba(0, 0, 0, 0.16);
+}
+
+#foot {
+    text-align: left;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+
+}
+
+#foot address {
+    font-size: large;
+    margin: 10px;
+    margin-left: 100px;
+    line-height: 40px;
+    color: antiquewhite;
+}
+
+.flex_t2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#links {
+    border: 1px solid;
+    width: 30%;
+    height: inherit;
+    background: rgb(84, 194, 194);
+    background: linear-gradient(0deg, rgba(84, 194, 194, 1) 29%, rgba(232, 255, 255, 1) 72%);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 19px;
+    overflow: hidden;
+}
+
+.td {
+    text-decoration: none;
+    color: black;
+}
+
+#links li>ul {
+    margin: 20px;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+#links li>ul:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------media query for mobile---------------- */
+
+
+
+@media only screen and (max-width: 360px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    #intro {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .flex_t1 {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #intro_inside {
+        border: none;
+    }
+
+    #intro_inside h1 {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+    }
+
+    button {
+        font-weight: 400;
+    }
+
+    #intro_inside div {
+        text-align: left;
+    }
+
+    .res_button {
+        border: none;
+        margin: 10px;
+        padding: 4px;
+        width: fit-content;
+        border-radius: 4px;
+        transition: .5s;
+        color: black;
+        font-size: small;
+    }
+
+    .res_button:hover {
+        background: rgb(255, 202, 232);
+        background: linear-gradient(90deg, rgba(255, 202, 232, 1) 15%, rgba(255, 184, 225, 1) 32%, rgba(255, 255, 255, 1) 54%, rgba(249, 255, 203, 1) 81%);
+        color: black;
+        transform: scale(1.2);
+        box-shadow: 1px 1px 9px 6px rgb(252, 252, 252);
+        cursor: pointer;
+    }
+
+    #intro_inside h2 {
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);
+    }
+
+    #my_pic {
+        width: 250px;
+        height: 300px;
+    }
+
+    #para {
+        width: fit-content;
+        height: fit-content;
+        font-size: small;
+    }
+
+    #navigation {
+        position: fixed;
+        top: 0%;
+        z-index: 6;
+        width: 100vw;
+        height: 42px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav {
+        margin-top: 40px;
+        width: 100vw;
+        text-align: center;
+        border: none;
+        padding: 2px;
+        background-color: transparent;
+    }
+
+    .menu {
+        font-size: x-large;
+        position: fixed;
+        z-index: 100;
+        top: 10px;
+        display: block;
+        margin: 10px;
+        color: black;
+    }
+
+    nav #myLink {
+        display: none;
+        background-color: rgb(255, 255, 255);
+        max-width: 40%;
+        height: 100vh;
+    }
+
+    nav a {
+        overflow: hidden;
+        padding: 10px;
+        display: inline-block;
+        line-height: 50px;
+        font-weight: 800;
+        font-size: small;
+        text-decoration: dotted;
+        color: black;
+    }
+
+    nav>a:hover {
+        color: rgb(53, 52, 52);
+    }
+
+    nav a::after {
+        content: " ";
+        position: absolute;
+        background-color: rgb(25, 25, 25);
+        transition: 0.5s width;
+        border-radius: 20%;
+    }
+
+    nav a:hover::after {
+        height: 10%;
+    }
+
+    #resume {
+        max-width: 160px;
+        height: 40%;
+        border-radius: 6px;
+        box-shadow: 0px 45px 65px 0px rgba(0, 0, 0, 0.5),
+            0px 35px 22px 0px rgba(0, 0, 0, 0.16);
+    }
+
+    #res {
+        width: 100vw;
+        padding: 5px;
+        height: 100vh;
+        padding-top: 10px;
+        /* background: rgb(203,255,255);
+    background: linear-gradient(0deg, rgba(203,255,255,1) 1%, rgba(203,255,255,1) 21%, rgba(20,251,251,1) 51%, rgba(255,245,245,1) 94%); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skill {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #skill .flex_t {
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        gap: 95px 5px;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    #skill p {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+        font-size: 9px;
+
+    }
+
+    #skill h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px;
+    }
+
+    #skill h3 {
+        font-size: 16px;
+    }
+
+    #front,
+    #back,
+    #others,
+    #data {
+        border: none;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        height: 150px;
+        width: 120px;
+        padding: 4px;
+    }
+
+    #pro1,
+    #pro2 {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        background-color: white;
+        border-radius: 10px;
+        height: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .proj {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .proj article {
+        max-width: 95%;
+    }
+
+    .hbold {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .fade {
+        position: relative;
+    }
+
+    .fade .imgg {
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin: 10px;
+        opacity: 1;
+        transition: 0.5s ease-out;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+
+    .fade::before {
+        content: "CLICK TO VIEW PROJECT";
+        top: 50%;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        opacity: 0;
+        text-align: center;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .fade:hover .imgg {
+        opacity: 0.8;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .fade:hover::before {
+        opacity: 1;
+    }
+
+    #education {
+        margin-top: 100px;
+        width: 100vw;
+        padding: 10px;
+        height: 100vh;
+        /* background: rgb(142,181,233);
+    background: linear-gradient(90deg, rgba(142,181,233,1) 15%, rgba(59,142,230,1) 34%, rgba(182,214,235,1) 53%, rgba(139,178,245,1) 81%); */
+    }
+
+    #education h2 {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .edu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        ;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 16px;
+        opacity: 0.5;
+        transition: 0.3s;
+        background-color: whitesmoke;
+    }
+
+    .edu:hover {
+        opacity: 1;
+        cursor: pointer;
+
+    }
+
+    .edu_flex {
+        text-align: center;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 80%;
+        row-gap: 6px;
+        justify-content: center;
+        min-height: 55%;
+    }
+
+    .edu_img {
+        border-radius: 40px;
+        width: 90px;
+        height: 100px;
+    }
+
+    .flex_t2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #links {
+        border: 1px solid;
+        width: 70%;
+        height: fit-content;
+        background: rgb(84, 194, 194);
+        background: linear-gradient(0deg, rgba(84, 194, 194, 1) 29%, rgba(232, 255, 255, 1) 72%);
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+        padding: 9px;
+        overflow: hidden;
+    }
+
+    .td {
+        text-decoration: none;
+        color: black;
+    }
+
+    #links li>ul {
+        margin: 8px;
+        transition: 0.2s;
+        font-size: small;
+        width: fit-content;
+    }
+
+    #links li>ul:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    form {
+        text-align: center;
+        width: 60%;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16),
+            0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+        border-radius: 10px;
+        padding: 5px;
+        margin: 40px;
+    }
+
+    input,
+    textarea {
+        border: 1px solid black;
+        text-align: center;
+        padding: 5px;
+        height: 20px;
+        width: 50%;
+        border-radius: 7px;
+        margin: 5px;
+        transition: 0.4s;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    form>button {
+        border-radius: 8px;
+        padding: 5px;
+        background-color: rgb(206, 206, 206);
+        width: fit-content;
+        transition: 0.1s ease-in;
+        color: black;
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    #project {
+        width: 100vw;
+        height: 100vh;
+        /* background: rgb(232,255,255);
+    background: linear-gradient(0deg, rgba(232,255,255,1) 17%, rgba(42,200,255,1) 56%, rgba(240,251,255,1) 98%); */
+
+    }
+
+    #project h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #project .flex_t {
+        justify-content: space-evenly;
+    }
+
+    #foot {
+        text-align: left;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+
+    }
+
+    #foot address {
+        font-size: small;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+    }
+}

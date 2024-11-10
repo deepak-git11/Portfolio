@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div id="navigation">
+      <a href="javascript:void(0);" onclick="myFunction()" class="menu">
+        <i class="fa fa-bars"></i
+      ></a>
+      <nav>
+        <div id="myLink">
+          <a href="#intro">HOME</a>
+          <a href="#skill">SKILLS</a>
+          <a href="#project">PROJECT</a>
+          <a href="#education">EDUCATION</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </nav>
+    </div>
+    <section id="intro">
+        
+      <div class="flex_t1">
+        <div id="intro_inside">
+          <div>
+            <h1>Hi Iam</h1>
+            <h1>Deepak S</h1>
+            <h2>software Develper</h2>
+            <p id="para">
+              Passionate software developer with good foundation and Seeking a
+              challenging role to leverage my technical skills in solving
+              complex problems and contributing to team success Committed to
+              continuous learning and growth in a collaborative environment
+            </p>
+          </div>
+          <a href="#res"><button class="res_button">Check Resume</button></a>
+        </div>
+        <img id="my_pic" src="./img/Deepak-removebg-preview.png" alt="deepak" />
+      </div>
+    </section>
+    <section id="res">
+      <img id="resume" src="./img/Screenshot 2024-10-15 214603.png" alt="resuee" />
+      <div>
+        <a href="./DEEPAK_S-2024.pdf" download="DEEPAK_S-2024.pdf">
+          <button class="res_button">DOWNLOAD CV</button>
+        </a>
+      </div>
+    </section>
+    <section id="skill">
+      <h2>SKILL</h2>
+      <div class="flex_t">
+        <div id="front" class="hover_scale">
+          <h3>Frontend</h3>
+          <p>html</p>
+          <p>css</p>
+          <p>javascript</p>
+        </div>
+        <div id="back" class="hover_scale">
+          <h3>Backend</h3>
+          <p>java</p>
+          <p>php</p>
+        </div>
+        <div id="data" class="hover_scale">
+          <h3>Database</h3>
+          <p>SQL</p>
+        </div>
+        <div id="others" class="hover_scale">
+          <h3>others</h3>
+          <p>Git - Github</p>
+        </div>
+      </div>
+    </section>
+    <section id="project">
+      <h2>PROJECT</h2>
+      <div class="proj">
+        <div id="pro1">
+          <article>
+            <p class="hbold">Subject-Allocation-system</p>
+            <li>
+              <ul>
+                HTML, CSS, JS, PHP, MYSQL
+              </ul>
+            </li>
+            <p>
+              Developed a system to optimize the assignment of subjects to
+              academic staff, reducing manual errors and enhancing workflow
+              efficiency
+            </p>
+          </article>
+          <div class="fade">
+            <a
+              href="https://github.com/deepak-git11/subject-allocation"
+              target="_blank"
+            >
+              <img class="imgg" src="./img/project_img.png" alt="po1" />
+            </a>
+          </div>
+        </div>
+        <div id="pro2">
+          <article>
+            <p class="hbold">Employee Database Management System</p>
+            <li>
+              <ul>
+                SQL
+              </ul>
+            </li>
+            <p>
+              Created a comprehensive database management system to optimize
+              employee data handling and improve data retrieval efficiency for a
+              medium-sized organization Impact: Implemented efficient querying
+              techniques and automated reporting.
+            </p>
+          </article>
+          <div class="fade">
+            <a href="https://github.com/deepak-git11/CRUD" target="_blank">
+              <img class="imgg" src="./img/sql.png" alt="po2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <h2>EDUCATION</h2>
+      <div class="edu_flex">
+        <div class="edu">
+          <div>
+            <img class="edu_img" src="./img/sastra_picture.avif" alt="sastra" />
+          </div>
+          <div>
+            <h4>SASTRA Deemed to be University</h4>
+            <p>BSc Computer Science</p>
+            <p>2021-2024</p>
+            <p>Grade : 7.7886 CGPA</p>
+          </div>
+        </div>
+        <div class="edu">
+          <div>
+            <img class="edu_img" src="./img/school.jpg" alt="" />
+          </div>
+          <div>
+            <h4>Raj Matriculation Higher Secondary School</h4>
+            <p>HSC-(Bio-Maths)</p>
+            <p>2020-2021</p>
+            <p>Grade : 87%</p>
+          </div>
+        </div>
+        <div class="edu">
+          <div>
+            <img class="edu_img" src="./img/school2.jpg" alt="" />
+          </div>
+          <div>
+            <h4>Raj Matriculation Higher Secondary School</h4>
+            <p>SSLC</p>
+            <p>2018-2019</p>
+            <p>Grade : 83%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>CONTACT</h2>
+      <div class="flex_t2">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="6a1a88a1-0a22-44d1-a49f-7cd5fa7e35aa"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your email"
+            required
+          />
+          <input type="text" name="name" placeholder="name" required />
+          <textarea
+            name="message"
+            id=""
+            cols="50"
+            rows="5"
+            wrap="hard"
+            required
+          ></textarea>
+          <br />
+          <button type="submit">send</button>
+        </form>
+        <div id="links">
+          <li>
+            <ul>
+              <a class="td" href=""><i class="fa fa-linkedin"></i>-Linkedin</a>
+            </ul>
+            <ul>
+              <a class="td" href=""><i class="fa fa-github"></i></a
+              >-Github
+            </ul>
+            <ul>
+              <a class="td" href="tel:+919361184588"
+                ><i class="fa fa-phone"></i>-9361184588</a
+              >
+            </ul>
+            <ul>
+              <a class="td" href="mailto:deepaksakthivel11@gmail.com"
+                ><i class="fa fa-envelope"></i>-deepaksakthivel11@gmail.com</a
+              >
+            </ul>
+          </li>
+        </div>
+      </div>
+      <div id="foot">
+        <address>
+          <h3>LOCATION :</h3>
+          Velachery,<br />
+          Chennai 600042,<br />
+          Tamil Nadu
+        </address>
+      </div>
+    </section>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("nav a");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent default anchor click behavior
+
+          const targetId = this.getAttribute("href"); // Get the href attribute
+          const targetSection = document.querySelector(targetId); // Select the target section
+
+          // Get the distance to scroll
+          const targetPosition =
+            targetSection.getBoundingClientRect().top + window.scrollY;
+          const startPosition = window.scrollY;
+          const distance = targetPosition - startPosition;
+          const duration = 1500; // Duration in milliseconds (e.g., 1000ms = 1 second)
+          let startTime = null;
+
+          // Animation function
+          function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / duration, 3); // Ensure progress is not more than 1
+
+            // Easing function (easeInOut)
+            const ease =
+              progress < 0.5
+                ? 4 * progress * progress * progress
+                : (progress - 1) * (progress - 1) * (progress - 1) + 1;
+
+            window.scrollTo(0, startPosition + distance * ease);
+
+            if (timeElapsed < duration) {
+              requestAnimationFrame(animation);
+            }
+          }
+
+          requestAnimationFrame(animation);
+        });
+      });
+    });
+
+    // menu
+    function myFunction() {
+      var x = document.getElementById("myLink");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</html>
